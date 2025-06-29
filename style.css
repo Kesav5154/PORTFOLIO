@@ -686,13 +686,11 @@ section {
 }
 
 .project-card.featured {
-    grid-column: 1 / -1;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0;
-    overflow: hidden; /* ADD THIS */
-    border-radius: var(--radius-lg); /* Ensure corners are clean */
+    max-width: 100%; /* prevent overflow */
+    width: 100%;
+    box-sizing: border-box;
 }
+
 .container {
     padding-left: var(--space-2xl);
     padding-right: var(--space-2xl);
