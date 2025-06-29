@@ -690,11 +690,8 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0;
-    overflow: hidden;
-    border-radius: var(--radius-lg);
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
+    overflow: hidden; /* ADD THIS */
+    border-radius: var(--radius-lg); /* Ensure corners are clean */
 }
 .container {
     padding-left: var(--space-2xl);
@@ -702,9 +699,11 @@ section {
     max-width: 1200px;
     margin: 0 auto;
 }
+
+
 .project-image {
-    height: auto;
-    aspect-ratio: 16 / 9; /* modern method for consistency */
+    position: relative;
+    height: 300px;
     overflow: hidden;
 }
 
@@ -712,18 +711,12 @@ section {
     height: 400px;
 }
 
-.project-image {
+.project-image img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    transition: var(--transition-slow);
 }
-
-.project-info {
-    padding: var(--space-xl);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
 
 .project-overlay {
     position: absolute;
