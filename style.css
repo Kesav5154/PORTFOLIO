@@ -667,7 +667,7 @@ section {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: var(--space-xl);
 }
 
@@ -709,7 +709,7 @@ section {
 }
 
 .featured .project-image {
-    height: 400px;
+    height: 200px;
 }
 
 .project-image {
