@@ -697,11 +697,9 @@ section {
     max-width: 1200px;
     margin: 0 auto;
 }
-
-
 .project-image {
-    position: relative;
-    height: 300px;
+    height: auto;
+    aspect-ratio: 16 / 9; /* modern method for consistency */
     overflow: hidden;
 }
 
